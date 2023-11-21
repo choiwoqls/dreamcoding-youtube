@@ -1,7 +1,7 @@
 //Object
 //변수 하나 당 값 하나
 
-const obj1 = {}; //Object literal
+const obj1 = { name: "" }; //Object literal
 const obj2 = new Object(); //Object constructor
 
 const name = "jb";
@@ -22,7 +22,9 @@ jb.hasJob = true;
 
 delete jb.hasJob;
 
-console.log(jb.name);
+const ex = "hasjob";
+
+console.log(jb[selectNum()]);
 console.log(jb["name"]);
 jb["hasJob"] = true;
 
@@ -30,11 +32,13 @@ function printValue(obj, key) {
     console.log(obj[key]);
 }
 
-function makePerson(name, age) {
+function makePerson(name, age, gender) {
+    let Gender = gender;
     //template
     return {
         name: name, //key == value 이면
         age, //생략 가능
+        aa: gender,
     };
 }
 

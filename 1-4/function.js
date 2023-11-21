@@ -31,6 +31,10 @@ function changeName(obj) {
 
 const ellie = { name: "ellie" };
 
+changeName(ellie);
+
+console.log(ellie.name);
+
 //Default parameters ES6
 function showMessage(message, from = "unknown") {
     // if(from === undefined){

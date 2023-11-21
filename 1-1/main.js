@@ -1,3 +1,9 @@
-'use strict';
+"use strict";
 
-console.log('main');
+console.log("main");
+
+if (2 > !1) {
+    console.log("??");
+} else {
+    console.log("!!");
+}

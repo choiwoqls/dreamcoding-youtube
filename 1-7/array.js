@@ -14,7 +14,7 @@ for (let fruit of fruits) {
 }
 
 //forEach
-fruits.forEach((fruit) => console.log(fruit));
+fruits.forEach((fruit, idx, arr) => console.log(fruit, idx, arr));
 
 //add, delete, copy
 //push - 배열 맨 뒤에 요소 추가
